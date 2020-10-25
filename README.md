@@ -36,5 +36,10 @@ npm run storybook
 npm run build-storybook
 ```
 
+### Deploy Storybook
+```
+npm run deploy-storybook
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

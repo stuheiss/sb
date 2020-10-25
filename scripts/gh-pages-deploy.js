@@ -15,6 +15,7 @@
       console.log("Pushing to gh-pages...");
       await execa("git", ["push", "origin", "HEAD:gh-pages", "--force"]);
       await execa("rm", ["-r", folderName]);
+      console.log("Deploy branch " + deployBranchName);
       await execa("git", ["checkout", "-f", deployBranchName]);
       await execa("git", ["branch", "-D", "gh-pages"]);
       console.log("Successfully deployed");

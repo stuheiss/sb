@@ -1,5 +1,7 @@
   const execa = require("execa");
   const fs = require("fs");
+  const args = process.argv.slice(2);
+  const deployBranchName = args.length ? args[0] : 'master';
 
   (async () => {
     try {
@@ -13,7 +15,7 @@
       console.log("Pushing to gh-pages...");
       await execa("git", ["push", "origin", "HEAD:gh-pages", "--force"]);
       await execa("rm", ["-r", folderName]);
-      await execa("git", ["checkout", "-f", "master"]);
+      await execa("git", ["checkout", "-f", deployBranchName]);
       await execa("git", ["branch", "-D", "gh-pages"]);
       console.log("Successfully deployed");
     } catch (e) {

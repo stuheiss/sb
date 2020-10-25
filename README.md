@@ -26,5 +26,15 @@ npm run gh-pages-deploy
 ```
 See [deploy to github pages](https://dev.to/rolanddoda/deploy-to-github-pages-like-a-pro-with-github-actions-4hdg)
 
+### Run Storybook
+```
+npm run storybook
+```
+
+### Build Storybook
+```
+npm run build-storybook
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

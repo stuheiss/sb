@@ -10,7 +10,8 @@
     "gh-pages-deploy": "node scripts/gh-pages-deploy.js main",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages -- --source-branch=main"
+    "deploy-storybook": "storybook-to-ghpages -- --source-branch=main",
+    "upgrade-storybook": "npx sb@next upgrade"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -18,11 +19,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
-    "@storybook/addon-actions": "^6.0.27",
-    "@storybook/addon-essentials": "^6.0.27",
-    "@storybook/addon-links": "^6.0.27",
+    "@storybook/addon-actions": "^6.0.28",
+    "@storybook/addon-essentials": "^6.0.28",
+    "@storybook/addon-links": "^6.0.28",
     "@storybook/storybook-deployer": "^2.8.7",
-    "@storybook/vue": "^6.0.27",
+    "@storybook/vue": "^6.0.28",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-unit-jest": "^4.5.8",
